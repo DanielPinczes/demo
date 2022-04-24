@@ -1,4 +1,4 @@
-package hu.daniel.pinczes.demo;
+package hu.daniel.pinczes.demo.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

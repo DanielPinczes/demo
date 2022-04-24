@@ -1,0 +1,30 @@
+databaseChangeLog:
+  -  changeSet:
+       id: 202204241345
+       author: dPinczes
+       changes:
+         -  createTable:
+              tableName: resource
+              columns:
+                -  column:
+                     name: id
+                     type: int
+                     autoIncrement: true
+                     constraints:
+                       primaryKey: true
+                       nullable: false
+                -  column:
+                     name: author
+                     type: varchar(50)
+                -  column:
+                     name: title
+                     type: varchar(50)
+                -  column:
+                     name: type
+                     type: varchar(50)
+                -  column:
+                     name: uri
+                     type: varchar(255)
+                -  column:
+                     name: date
+                     type: date

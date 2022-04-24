@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: "db/changelog/202204241345_dpinczes_resource_table_create.yaml"
+  - include:
+      file: "db/changelog/202204241346_dpinczes_resource_insert.yaml"
+

@@ -1,0 +1,61 @@
+databaseChangeLog:
+  -  changeSet:
+       id: 202203311325
+       author: dPinczes
+       changes:
+         -  insert:
+              tableName: resource
+              columns:
+                -  column:
+                     name: author
+                     value: "Nigel Poulton"
+                -  column:
+                     name: title
+                     value: "Docker Deep Dive"
+                -  column:
+                     name: type
+                     value: "BOOK"
+                -  column:
+                     name: date
+                     value: "2017-01-01"
+  -  changeSet:
+       id: 202203311326
+       author: dPinczes
+       changes:
+         -  insert:
+              tableName: resource
+              columns:
+                -  column:
+                     name: author
+                     value: "Alex Ellis"
+                -  column:
+                     name: title
+                     value: "Use multi-stage builds"
+                -  column:
+                     name: type
+                     value: "URL"
+                -  column:
+                     name: uri
+                     value: "https://docs.docker.com/develop/develop-images/multistage-build/"
+                -  column:
+                     name: date
+                     value: "2022-04-23"
+  -  changeSet:
+       id: 202203311327
+       author: dPinczes
+       changes:
+         -  insert:
+              tableName: resource
+              columns:
+                -  column:
+                     name: title
+                     value: "Pods"
+                -  column:
+                     name: type
+                     value: "URL"
+                -  column:
+                     name: uri
+                     value: "https://kubernetes.io/docs/concepts/workloads/pods/"
+                -  column:
+                     name: date
+                     value: "2022-04-24"

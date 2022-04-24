@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demo-db
+  name: demo-db
+spec:
+  containers:
+    - image: mysql:latest
+      name: demo-db
+      env:
+      - name: MYSQL_ROOT_PASSWORD
+        value: "root"
+      - name: MYSQL_DATABASE
+        value: "demo-db"
+      - name: MYSQL_USER
+        value: "demo-db"
+      - name: MYSQL_PASSWORD
+        value: "demo-db"
+      resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
